@@ -1,6 +1,4 @@
 # 575.com
-A Rasberry Pi-based webserver that takes poetry submissions and converts them to nested filepaths.
-
 A directory.
 Ripe with abstract potential...
 Open the folder!
