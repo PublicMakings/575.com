@@ -6,11 +6,17 @@ A Rasberry Pi-based webserver that takes poetry submissions and converts them to
 2. Power supply
 3. Internet connection
 
-## Software
+### Files
+Download the haiku folder and stick it on your desktop. I don't think the location makes a difference.
+
+### Software
 may require sudo
 1. ```pip3 install pathlib```
 2. ```pip3 install textstat```
 3. ```pip3 install flask```
-4. [ngrok](https://ngrok.com/download)
-..1. pick Linux ARM
-..2. requires GUI installation
+4. [ngrok](https://ngrok.com/download)(pick Linux ARM, requires GUI installation)
+
+### Activate!
+1. ```python3 /path/to/haiku/app.py```
+2. ```./ngrok 5000```
+3. Ngrok will pop a window with a URL. Plug that URL into your browser and you should see an internet-accessible webpage!
