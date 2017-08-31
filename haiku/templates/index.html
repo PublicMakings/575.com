@@ -1,0 +1,454 @@
+Last login: Wed Aug 30 15:17:02 on ttys000
+You have mail.
+Taylor-LT:~ taylor$ ssh 192.168.000.021 -l pi
+pi@192.168.000.021's password: 
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Wed Aug 30 15:59:47 2017
+pi@raspberrypi:~ $ cat /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: BCM2835
+Revision	: a02082
+Serial		: 000000008e496b7c
+pi@raspberrypi:~ $ vncserver
+VNC(R) Server 6.1.1 (r28093) ARMv6 (May 19 2017 12:59:35)
+Copyright (C) 2002-2017 RealVNC Ltd.
+RealVNC and VNC are trademarks of RealVNC Ltd and are protected by trademark
+registrations and/or pending trademark applications in the European Union,
+United States of America and other jurisdictions.
+Protected by UK patent 2481870; US patent 8760366; EU patent 2652951.
+See https://www.realvnc.com for information on VNC.
+For third party acknowledgements see:
+https://www.realvnc.com/docs/6.1/foss.html
+
+If a desktop environment fails to load for this virtual desktop, please see:
+ https://www.realvnc.com/doclink/kb-345
+Running applications in /etc/vnc/xstartup
+
+VNC Server catchphrase: "Yellow druid Russian. Smart scale serpent."
+             signature: 4c-d9-5a-64-a4-38-5c-a1
+
+Log file is /home/pi/.vnc/raspberrypi:1.log
+New desktop is raspberrypi:1 (192.168.0.21:1)
+pi@raspberrypi:~ $ epiphany
+-bash: epiphany: command not found
+pi@raspberrypi:~ $ sudo apt-get install midori
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  aspell aspell-en enchant geoclue-2.0 gstreamer1.0-plugins-good gstreamer1.0-x hunspell-en-us libaa1
+  libaspell15 libavc1394-0 libcaca0 libdv4 libenchant1c2a libflac8 libgles2-mesa libgpm2 libharfbuzz-icu0
+  libhunspell-1.3-0 libiec61883-0 libjack-jackd2-0 libjavascriptcoregtk-1.0-0 libmbim-glib4 libmbim-proxy
+  libmm-glib0 libopus0 libqmi-glib1 libraw1394-11 libshout3 libspeex1 libtag1-vanilla libtag1c2a libwavpack1
+  libwebkitgtk-1.0-0 libwebkitgtk-1.0-common libwebp5 libxslt1.1 libxss1 modemmanager
+Suggested packages:
+  aspell-doc spellutils hunspell openoffice.org-hunspell openoffice.org-core libdv-bin oss-compat
+  libenchant-voikko gpm jackd2 opus-tools libraw1394-doc speex
+The following NEW packages will be installed:
+  aspell aspell-en enchant geoclue-2.0 gstreamer1.0-plugins-good gstreamer1.0-x hunspell-en-us libaa1
+  libaspell15 libavc1394-0 libcaca0 libdv4 libenchant1c2a libflac8 libgles2-mesa libgpm2 libharfbuzz-icu0
+  libhunspell-1.3-0 libiec61883-0 libjack-jackd2-0 libjavascriptcoregtk-1.0-0 libmbim-glib4 libmbim-proxy
+  libmm-glib0 libopus0 libqmi-glib1 libraw1394-11 libshout3 libspeex1 libtag1-vanilla libtag1c2a libwavpack1
+  libwebkitgtk-1.0-0 libwebkitgtk-1.0-common libwebp5 libxslt1.1 libxss1 midori modemmanager
+0 upgraded, 39 newly installed, 0 to remove and 3 not upgraded.
+Need to get 16.5 MB of archives.
+After this operation, 57.2 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.raspberrypi.org/debian/ jessie/main libgles2-mesa armhf 13.0.0-1+rpi1 [52.4 kB]
+Get:2 http://mirrordirector.raspbian.org/raspbian/ jessie/main libgpm2 armhf 1.20.4-6.1 [35.1 kB]
+Get:3 http://mirrordirector.raspbian.org/raspbian/ jessie/main libaa1 armhf 1.4p5-43 [49.8 kB]
+Get:4 http://mirrordirector.raspbian.org/raspbian/ jessie/main libaspell15 armhf 0.60.7~20110707-1.3 [300 kB]
+Get:5 http://mirrordirector.raspbian.org/raspbian/ jessie/main libraw1394-11 armhf 2.1.0-3 [41.7 kB]
+Get:6 http://mirrordirector.raspbian.org/raspbian/ jessie/main libavc1394-0 armhf 0.5.4-2 [21.8 kB]
+Get:7 http://mirrordirector.raspbian.org/raspbian/ jessie/main libcaca0 armhf 0.99.beta19-2 [335 kB]
+Get:8 http://mirrordirector.raspbian.org/raspbian/ jessie/main libdv4 armhf 1.0.0-6 [76.6 kB]
+Get:9 http://mirrordirector.raspbian.org/raspbian/ jessie/main aspell armhf 0.60.7~20110707-1.3 [219 kB]
+Get:10 http://mirrordirector.raspbian.org/raspbian/ jessie/main aspell-en all 7.1-0-1.1 [266 kB]
+Get:11 http://mirrordirector.raspbian.org/raspbian/ jessie/main hunspell-en-us all 20070829-6+deb8u1 [217 kB]
+Get:12 http://mirrordirector.raspbian.org/raspbian/ jessie/main libhunspell-1.3-0 armhf 1.3.3-3 [123 kB]
+Get:13 http://mirrordirector.raspbian.org/raspbian/ jessie/main libenchant1c2a armhf 1.6.0-10.1 [58.6 kB]
+Get:14 http://mirrordirector.raspbian.org/raspbian/ jessie/main libflac8 armhf 1.3.0-3 [79.0 kB]
+Get:15 http://mirrordirector.raspbian.org/raspbian/ jessie/main libharfbuzz-icu0 armhf 0.9.35-2 [359 kB]
+Get:16 http://mirrordirector.raspbian.org/raspbian/ jessie/main libiec61883-0 armhf 1.2.0-0.2 [27.9 kB]
+Get:17 http://mirrordirector.raspbian.org/raspbian/ jessie/main libopus0 armhf 1.1-2 [134 kB]
+Get:18 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjack-jackd2-0 armhf 1.9.10+20140719git3eb0ae6a~dfsg-2 [148 kB]
+Get:19 http://mirrordirector.raspbian.org/raspbian/ jessie/main libjavascriptcoregtk-1.0-0 armhf 2.4.9-1~deb8u1+rpi1 [1,190 kB]
+Get:20 http://mirrordirector.raspbian.org/raspbian/ jessie/main libmbim-glib4 armhf 1.10.0-2.1 [53.5 kB]
+Get:21 http://mirrordirector.raspbian.org/raspbian/ jessie/main libmm-glib0 armhf 1.4.0-1 [135 kB]
+Get:22 http://mirrordirector.raspbian.org/raspbian/ jessie/main libqmi-glib1 armhf 1.10.2-2 [302 kB]
+Get:23 http://mirrordirector.raspbian.org/raspbian/ jessie/main libspeex1 armhf 1.2~rc1.2-1 [51.2 kB]          
+Get:24 http://mirrordirector.raspbian.org/raspbian/ jessie/main libshout3 armhf 2.3.1-3 [41.5 kB]              
+Get:25 http://mirrordirector.raspbian.org/raspbian/ jessie/main libtag1-vanilla armhf 1.9.1-2.1 [232 kB]       
+Get:26 http://mirrordirector.raspbian.org/raspbian/ jessie/main libwavpack1 armhf 4.70.0-1 [83.5 kB]           
+Get:27 http://mirrordirector.raspbian.org/raspbian/ jessie/main libwebp5 armhf 0.4.1-1.2 [164 kB]              
+Get:28 http://mirrordirector.raspbian.org/raspbian/ jessie/main libxslt1.1 armhf 1.1.28-2+deb8u3 [213 kB]      
+Get:29 http://mirrordirector.raspbian.org/raspbian/ jessie/main libwebkitgtk-1.0-common all 2.4.9-1~deb8u1+rpi1 [451 kB]
+Get:30 http://mirrordirector.raspbian.org/raspbian/ jessie/main libwebkitgtk-1.0-0 armhf 2.4.9-1~deb8u1+rpi1 [6,262 kB]
+Get:31 http://mirrordirector.raspbian.org/raspbian/ jessie/main libxss1 armhf 1:1.2.2-1 [16.8 kB]              
+Get:32 http://mirrordirector.raspbian.org/raspbian/ jessie/main enchant armhf 1.6.0-10.1 [17.1 kB]             
+Get:33 http://mirrordirector.raspbian.org/raspbian/ jessie/main geoclue-2.0 armhf 2.1.10-2 [61.4 kB]           
+Get:34 http://mirrordirector.raspbian.org/raspbian/ jessie/main libtag1c2a armhf 1.9.1-2.1 [17.6 kB]           
+Get:35 http://mirrordirector.raspbian.org/raspbian/ jessie/main gstreamer1.0-plugins-good armhf 1.4.4-2+deb8u3 [2,218 kB]
+Get:36 http://mirrordirector.raspbian.org/raspbian/ jessie/main gstreamer1.0-x armhf 1.4.4-2+deb8u1 [823 kB]   
+Get:37 http://mirrordirector.raspbian.org/raspbian/ jessie/main libmbim-proxy armhf 1.10.0-2.1 [6,464 B]       
+Get:38 http://mirrordirector.raspbian.org/raspbian/ jessie/main midori armhf 0.4.3+dfsg-0.1 [1,113 kB]         
+Get:39 http://mirrordirector.raspbian.org/raspbian/ jessie/main modemmanager armhf 1.4.0-1 [465 kB]            
+Fetched 16.5 MB in 18s (889 kB/s)                                                                              
+Extracting templates from packages: 100%
+Selecting previously unselected package libgpm2:armhf.
+(Reading database ... 63610 files and directories currently installed.)
+Preparing to unpack .../libgpm2_1.20.4-6.1_armhf.deb ...
+Unpacking libgpm2:armhf (1.20.4-6.1) ...
+Selecting previously unselected package libaa1:armhf.
+Preparing to unpack .../libaa1_1.4p5-43_armhf.deb ...
+Unpacking libaa1:armhf (1.4p5-43) ...
+Selecting previously unselected package libaspell15:armhf.
+Preparing to unpack .../libaspell15_0.60.7~20110707-1.3_armhf.deb ...
+Unpacking libaspell15:armhf (0.60.7~20110707-1.3) ...
+Selecting previously unselected package libraw1394-11:armhf.
+Preparing to unpack .../libraw1394-11_2.1.0-3_armhf.deb ...
+Unpacking libraw1394-11:armhf (2.1.0-3) ...
+Selecting previously unselected package libavc1394-0:armhf.
+Preparing to unpack .../libavc1394-0_0.5.4-2_armhf.deb ...
+Unpacking libavc1394-0:armhf (0.5.4-2) ...
+Selecting previously unselected package libcaca0:armhf.
+Preparing to unpack .../libcaca0_0.99.beta19-2_armhf.deb ...
+Unpacking libcaca0:armhf (0.99.beta19-2) ...
+Selecting previously unselected package libdv4:armhf.
+Preparing to unpack .../libdv4_1.0.0-6_armhf.deb ...
+Unpacking libdv4:armhf (1.0.0-6) ...
+Selecting previously unselected package aspell.
+Preparing to unpack .../aspell_0.60.7~20110707-1.3_armhf.deb ...
+Unpacking aspell (0.60.7~20110707-1.3) ...
+Selecting previously unselected package aspell-en.
+Preparing to unpack .../aspell-en_7.1-0-1.1_all.deb ...
+Unpacking aspell-en (7.1-0-1.1) ...
+Selecting previously unselected package hunspell-en-us.
+Preparing to unpack .../hunspell-en-us_20070829-6+deb8u1_all.deb ...
+Unpacking hunspell-en-us (20070829-6+deb8u1) ...
+Selecting previously unselected package libhunspell-1.3-0:armhf.
+Preparing to unpack .../libhunspell-1.3-0_1.3.3-3_armhf.deb ...
+Unpacking libhunspell-1.3-0:armhf (1.3.3-3) ...
+Selecting previously unselected package libenchant1c2a:armhf.
+Preparing to unpack .../libenchant1c2a_1.6.0-10.1_armhf.deb ...
+Unpacking libenchant1c2a:armhf (1.6.0-10.1) ...
+Selecting previously unselected package libflac8:armhf.
+Preparing to unpack .../libflac8_1.3.0-3_armhf.deb ...
+Unpacking libflac8:armhf (1.3.0-3) ...
+Selecting previously unselected package libgles2-mesa:armhf.
+Preparing to unpack .../libgles2-mesa_13.0.0-1+rpi1_armhf.deb ...
+Unpacking libgles2-mesa:armhf (13.0.0-1+rpi1) ...
+Selecting previously unselected package libharfbuzz-icu0:armhf.
+Preparing to unpack .../libharfbuzz-icu0_0.9.35-2_armhf.deb ...
+Unpacking libharfbuzz-icu0:armhf (0.9.35-2) ...
+Selecting previously unselected package libiec61883-0:armhf.
+Preparing to unpack .../libiec61883-0_1.2.0-0.2_armhf.deb ...
+Unpacking libiec61883-0:armhf (1.2.0-0.2) ...
+Selecting previously unselected package libopus0:armhf.
+Preparing to unpack .../libopus0_1.1-2_armhf.deb ...
+Unpacking libopus0:armhf (1.1-2) ...
+Selecting previously unselected package libjack-jackd2-0:armhf.
+Preparing to unpack .../libjack-jackd2-0_1.9.10+20140719git3eb0ae6a~dfsg-2_armhf.deb ...
+Unpacking libjack-jackd2-0:armhf (1.9.10+20140719git3eb0ae6a~dfsg-2) ...
+Selecting previously unselected package libjavascriptcoregtk-1.0-0:armhf.
+Preparing to unpack .../libjavascriptcoregtk-1.0-0_2.4.9-1~deb8u1+rpi1_armhf.deb ...
+Unpacking libjavascriptcoregtk-1.0-0:armhf (2.4.9-1~deb8u1+rpi1) ...
+Selecting previously unselected package libmbim-glib4:armhf.
+Preparing to unpack .../libmbim-glib4_1.10.0-2.1_armhf.deb ...
+Unpacking libmbim-glib4:armhf (1.10.0-2.1) ...
+Selecting previously unselected package libmm-glib0:armhf.
+Preparing to unpack .../libmm-glib0_1.4.0-1_armhf.deb ...
+Unpacking libmm-glib0:armhf (1.4.0-1) ...
+Selecting previously unselected package libqmi-glib1:armhf.
+Preparing to unpack .../libqmi-glib1_1.10.2-2_armhf.deb ...
+Unpacking libqmi-glib1:armhf (1.10.2-2) ...
+Selecting previously unselected package libspeex1:armhf.
+Preparing to unpack .../libspeex1_1.2~rc1.2-1_armhf.deb ...
+Unpacking libspeex1:armhf (1.2~rc1.2-1) ...
+Selecting previously unselected package libshout3:armhf.
+Preparing to unpack .../libshout3_2.3.1-3_armhf.deb ...
+Unpacking libshout3:armhf (2.3.1-3) ...
+Selecting previously unselected package libtag1-vanilla:armhf.
+Preparing to unpack .../libtag1-vanilla_1.9.1-2.1_armhf.deb ...
+Unpacking libtag1-vanilla:armhf (1.9.1-2.1) ...
+Selecting previously unselected package libwavpack1:armhf.
+Preparing to unpack .../libwavpack1_4.70.0-1_armhf.deb ...
+Unpacking libwavpack1:armhf (4.70.0-1) ...
+Selecting previously unselected package libwebp5:armhf.
+Preparing to unpack .../libwebp5_0.4.1-1.2_armhf.deb ...
+Unpacking libwebp5:armhf (0.4.1-1.2) ...
+Selecting previously unselected package libxslt1.1:armhf.
+Preparing to unpack .../libxslt1.1_1.1.28-2+deb8u3_armhf.deb ...
+Unpacking libxslt1.1:armhf (1.1.28-2+deb8u3) ...
+Selecting previously unselected package libwebkitgtk-1.0-common.
+Preparing to unpack .../libwebkitgtk-1.0-common_2.4.9-1~deb8u1+rpi1_all.deb ...
+Unpacking libwebkitgtk-1.0-common (2.4.9-1~deb8u1+rpi1) ...
+Selecting previously unselected package libwebkitgtk-1.0-0:armhf.
+Preparing to unpack .../libwebkitgtk-1.0-0_2.4.9-1~deb8u1+rpi1_armhf.deb ...
+Unpacking libwebkitgtk-1.0-0:armhf (2.4.9-1~deb8u1+rpi1) ...
+Selecting previously unselected package libxss1:armhf.
+Preparing to unpack .../libxss1_1%3a1.2.2-1_armhf.deb ...
+Unpacking libxss1:armhf (1:1.2.2-1) ...
+Selecting previously unselected package enchant.
+Preparing to unpack .../enchant_1.6.0-10.1_armhf.deb ...
+Unpacking enchant (1.6.0-10.1) ...
+Selecting previously unselected package geoclue-2.0.
+Preparing to unpack .../geoclue-2.0_2.1.10-2_armhf.deb ...
+Unpacking geoclue-2.0 (2.1.10-2) ...
+Selecting previously unselected package libtag1c2a:armhf.
+Preparing to unpack .../libtag1c2a_1.9.1-2.1_armhf.deb ...
+Unpacking libtag1c2a:armhf (1.9.1-2.1) ...
+Selecting previously unselected package gstreamer1.0-plugins-good:armhf.
+Preparing to unpack .../gstreamer1.0-plugins-good_1.4.4-2+deb8u3_armhf.deb ...
+Unpacking gstreamer1.0-plugins-good:armhf (1.4.4-2+deb8u3) ...
+Selecting previously unselected package gstreamer1.0-x:armhf.
+Preparing to unpack .../gstreamer1.0-x_1.4.4-2+deb8u1_armhf.deb ...
+Unpacking gstreamer1.0-x:armhf (1.4.4-2+deb8u1) ...
+Selecting previously unselected package libmbim-proxy.
+Preparing to unpack .../libmbim-proxy_1.10.0-2.1_armhf.deb ...
+Unpacking libmbim-proxy (1.10.0-2.1) ...
+Selecting previously unselected package midori.
+Preparing to unpack .../midori_0.4.3+dfsg-0.1_armhf.deb ...
+Unpacking midori (0.4.3+dfsg-0.1) ...
+Selecting previously unselected package modemmanager.
+Preparing to unpack .../modemmanager_1.4.0-1_armhf.deb ...
+Unpacking modemmanager (1.4.0-1) ...
+Processing triggers for man-db (2.7.5-1~bpo8+1) ...
+Processing triggers for dbus (1.8.22-0+deb8u1) ...
+Processing triggers for desktop-file-utils (0.22-1) ...
+Processing triggers for mime-support (3.58) ...
+Processing triggers for hicolor-icon-theme (0.13-1) ...
+Setting up libgpm2:armhf (1.20.4-6.1) ...
+Setting up libaa1:armhf (1.4p5-43) ...
+Setting up libaspell15:armhf (0.60.7~20110707-1.3) ...
+Setting up libraw1394-11:armhf (2.1.0-3) ...
+Setting up libavc1394-0:armhf (0.5.4-2) ...
+Setting up libcaca0:armhf (0.99.beta19-2) ...
+Setting up libdv4:armhf (1.0.0-6) ...
+Setting up aspell (0.60.7~20110707-1.3) ...
+Setting up aspell-en (7.1-0-1.1) ...
+Setting up hunspell-en-us (20070829-6+deb8u1) ...
+Setting up libhunspell-1.3-0:armhf (1.3.3-3) ...
+Setting up libenchant1c2a:armhf (1.6.0-10.1) ...
+Setting up libflac8:armhf (1.3.0-3) ...
+Setting up libgles2-mesa:armhf (13.0.0-1+rpi1) ...
+Setting up libharfbuzz-icu0:armhf (0.9.35-2) ...
+Setting up libiec61883-0:armhf (1.2.0-0.2) ...
+Setting up libopus0:armhf (1.1-2) ...
+Setting up libjack-jackd2-0:armhf (1.9.10+20140719git3eb0ae6a~dfsg-2) ...
+Setting up libjavascriptcoregtk-1.0-0:armhf (2.4.9-1~deb8u1+rpi1) ...
+Setting up libmbim-glib4:armhf (1.10.0-2.1) ...
+Setting up libmm-glib0:armhf (1.4.0-1) ...
+Setting up libqmi-glib1:armhf (1.10.2-2) ...
+Setting up libspeex1:armhf (1.2~rc1.2-1) ...
+Setting up libshout3:armhf (2.3.1-3) ...
+Setting up libtag1-vanilla:armhf (1.9.1-2.1) ...
+Setting up libwavpack1:armhf (4.70.0-1) ...
+Setting up libwebp5:armhf (0.4.1-1.2) ...
+Setting up libxslt1.1:armhf (1.1.28-2+deb8u3) ...
+Setting up libwebkitgtk-1.0-common (2.4.9-1~deb8u1+rpi1) ...
+Setting up libwebkitgtk-1.0-0:armhf (2.4.9-1~deb8u1+rpi1) ...
+Setting up libxss1:armhf (1:1.2.2-1) ...
+Setting up enchant (1.6.0-10.1) ...
+Setting up geoclue-2.0 (2.1.10-2) ...
+Setting up libtag1c2a:armhf (1.9.1-2.1) ...
+Setting up gstreamer1.0-plugins-good:armhf (1.4.4-2+deb8u3) ...
+Setting up gstreamer1.0-x:armhf (1.4.4-2+deb8u1) ...
+Setting up libmbim-proxy (1.10.0-2.1) ...
+Setting up midori (0.4.3+dfsg-0.1) ...
+update-alternatives: using /usr/bin/midori to provide /usr/bin/x-www-browser (x-www-browser) in auto mode
+rmdir: failed to remove ‘/etc/xdg/midori/extensions/libadblock.so’: No such file or directory
+Setting up modemmanager (1.4.0-1) ...
+Processing triggers for libc-bin (2.19-18+deb8u10) ...
+Processing triggers for dictionaries-common (1.23.17) ...
+aspell-autobuildhash: processing: en [en-common].
+aspell-autobuildhash: processing: en [en-variant_0].
+aspell-autobuildhash: processing: en [en-variant_1].
+aspell-autobuildhash: processing: en [en-variant_2].
+aspell-autobuildhash: processing: en [en-w_accents-only].
+aspell-autobuildhash: processing: en [en-wo_accents-only].
+aspell-autobuildhash: processing: en [en_CA-variant_0].
+aspell-autobuildhash: processing: en [en_CA-variant_1].
+aspell-autobuildhash: processing: en [en_CA-w_accents-only].
+aspell-autobuildhash: processing: en [en_CA-wo_accents-only].
+aspell-autobuildhash: processing: en [en_GB-ise-w_accents-only].
+aspell-autobuildhash: processing: en [en_GB-ise-wo_accents-only].
+aspell-autobuildhash: processing: en [en_GB-ize-w_accents-only].
+aspell-autobuildhash: processing: en [en_GB-ize-wo_accents-only].
+aspell-autobuildhash: processing: en [en_GB-variant_0].
+aspell-autobuildhash: processing: en [en_GB-variant_1].
+aspell-autobuildhash: processing: en [en_US-w_accents-only].
+aspell-autobuildhash: processing: en [en_US-wo_accents-only].
+Processing triggers for dbus (1.8.22-0+deb8u1) ...
+pi@raspberrypi:~ $ cd Desktop
+pi@raspberrypi:~/Desktop $ unzip ngrok-stable-linux-arm.zip
+Archive:  ngrok-stable-linux-arm.zip
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+unzip:  cannot find zipfile directory in one of ngrok-stable-linux-arm.zip or
+        ngrok-stable-linux-arm.zip.zip, and cannot find ngrok-stable-linux-arm.zip.ZIP, period.
+pi@raspberrypi:~/Desktop $ unzip ngrok-stable-linux-arm
+Archive:  ngrok-stable-linux-arm.zip
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+unzip:  cannot find zipfile directory in one of ngrok-stable-linux-arm or
+        ngrok-stable-linux-arm.zip, and cannot find ngrok-stable-linux-arm.ZIP, period.
+pi@raspberrypi:~/Desktop $ ls
+direct.py  haiku  hello  hello2  ngrok-stable-linux-arm.zip
+pi@raspberrypi:~/Desktop $ unzip ngrok.zip
+Archive:  ngrok.zip
+  inflating: ngrok                   
+pi@raspberrypi:~/Desktop $ ./ngrok authtoken 22zBjyYQZHpoHKve5Cy1c_65wiPkrrxjMQ6fAHDY2PL
+Authtoken saved to configuration file: /home/pi/.ngrok2/ngrok.yml
+pi@raspberrypi:~/Desktop $ ./ngrok http 5000
+pi@raspberrypi:~/Desktop $ ./ngrok http 80
+pi@raspberrypi:~/Desktop $ ./ngrok http 5000
+pi@raspberrypi:~/Desktop $ cat /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 76.80
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 76.80
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 76.80
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 76.80
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: BCM2835
+Revision	: a02082
+Serial		: 000000008e496b7c
+pi@raspberrypi:~/Desktop $ cd haiku
+pi@raspberrypi:~/Desktop/haiku $ ls
+app.py  app.py~  static  templates
+pi@raspberrypi:~/Desktop/haiku $ sudo nano app.py
+pi@raspberrypi:~/Desktop/haiku $ cd templates
+pi@raspberrypi:~/Desktop/haiku/templates $ ls
+An  In  index.html  layout.html  yo
+pi@raspberrypi:~/Desktop/haiku/templates $ nano index.html
+
+  GNU nano 2.2.6                        File: index.html                                                        
+
+<html>
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href='/static/style.css' />
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<body>
+
+{% extends "layout.html" %}
+{% block body %}
+<script type="text/javascript">
+  $(function() {
+    var submit_form = function(e) {
+      $.getJSON($SCRIPT_ROOT + '/_get_poem', {
+        a: $('input[name="a"]').val(),
+      }, function(data) {
+        $('#result').text(data.result);
+        $('input[name=a]').focus().select();
+      });
+      return false;
+    };
+
+    // listen for enter key
+    $('a#calculate').bind('click', submit_form);
+    $('input[type=text]').bind('keydown', function(e) {
+      if (e.keyCode == 13) {
+        submit_form(e);
+      }
+    });
+    $('input[name=a]').focus();
+  });
+</script>
+
+<p>
+  <input type="text" size="100" name="a">
+  <br />
+  <span id="result"></span>
+<p>
+
+<a href=# id="calculate">Submit</a>
+{% endblock %}
+
+</body>
+</html>
