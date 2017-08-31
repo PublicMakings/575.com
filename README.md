@@ -1,6 +1,9 @@
 # 575.com
 A Rasberry Pi-based webserver that takes poetry submissions and converts them to nested filepaths.
 
+### Before you Begin
+We'll be using Ngrok to connect to tunnel into our network. I picked this solution because I don't know too much about securing port-forwarding on my router. This solution works, but might not be the best for a permanent project with a stable URL.
+
 ### Hardware
 1. Raspberry Pi
 2. Power supply
