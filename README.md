@@ -24,5 +24,7 @@ may require sudo
 
 ### Activate!
 1. ```python3 /path/to/haiku/app.py```
-2. ```./ngrok 5000```
-3. Ngrok will pop a window with a URL. Plug that URL into your browser and you should see an internet-accessible webpage!
+2. ```./ngrok 5000``` (we use 5000 to match up with Flask)
+3. Ngrok will pop a window with a URL.
+   
+   Plug that URL into your browser and you should see an internet-accessible webpage!
