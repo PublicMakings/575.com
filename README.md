@@ -7,4 +7,10 @@ A Rasberry Pi-based webserver that takes poetry submissions and converts them to
 3. Internet connection
 
 ## Software
-1. ```pip3 ``` 
+may require sudo
+1. ```pip3 install pathlib```
+2. ```pip3 install textstat```
+3. ```pip3 install flask```
+4. [ngrok](https://ngrok.com/download)
+..1. pick Linux ARM
+..2. requires GUI installation
