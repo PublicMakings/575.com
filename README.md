@@ -14,7 +14,13 @@ may require sudo
 1. ```pip3 install pathlib```
 2. ```pip3 install textstat```
 3. ```pip3 install flask```
-4. [ngrok](https://ngrok.com/download)(pick Linux ARM, requires GUI installation)
+4. [ngrok](https://ngrok.com/download)
+   
+   pick Linux ARM
+   
+   requires GUI installation
+   
+   follow the instructions on the site for setup
 
 ### Activate!
 1. ```python3 /path/to/haiku/app.py```
