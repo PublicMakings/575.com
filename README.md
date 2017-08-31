@@ -13,7 +13,7 @@ We'll be using Ngrok to connect to tunnel into our network. I picked this soluti
 Download the haiku folder and stick it on your desktop. I don't think the location makes a difference.
 
 ### Software
-may require sudo
+To be installed on the RPi. May require sudo.
 1. ```pip3 install pathlib```
 2. ```pip3 install textstat```
 3. ```pip3 install flask```
