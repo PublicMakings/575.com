@@ -1,10 +1,10 @@
 # 575.com
 A Rasberry Pi-based webserver that takes poetry submissions and converts them to nested filepaths.
 
-## Hardware
-Raspberry Pi
-Power supply
-Internet connection
+### Hardware
+1. Raspberry Pi
+2. Power supply
+3. Internet connection
 
 ## Software
-pip3 
+1. ```pip3 ``` 
