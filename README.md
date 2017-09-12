@@ -34,8 +34,8 @@ To be installed on the RPi. May require sudo.
 ### Activate!
 1. Terminal session 1: ```python3 /path/to/haiku/read.py```
 2. Terminal session 2: ```python3 /path/to/haiku/write.py```
-3. Terminal session 3: ```./ngrok http 5000```
-4. Terminal session 4: ```./ngrok http 5001```
+3. Terminal session 3: ```./ngrok http 5000``` (assuming you are in the install directory)
+4. Terminal session 4: ```./ngrok http 5001``` (assuming you are in the install directory)
       
    Plug that URL into your browser and you should see an
    internet-accessible webpage! Note: Ngrok will not allow you to do two
