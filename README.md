@@ -16,7 +16,7 @@ permanent project with a stable URL.
 3. Internet connection
 
 ### Files
-Download the haiku folder and stick it on your desktop. I don't think the location makes a difference.
+Download the haiku folder and unzip it on your desktop.
 
 ### Software
 To be installed on the RPi. May require sudo.
@@ -32,8 +32,11 @@ To be installed on the RPi. May require sudo.
    follow the instructions on the site for setup
 
 ### Activate!
-1. ```python3 /path/to/haiku/app.py```
-2. ```./ngrok 5000``` (we use 5000 to match up with Flask)
-3. Ngrok will pop a window with a URL.
+1. Terminal session 1: ```python3 /path/to/haiku/read.py```
+2. Terminal session 2: ```python3 /path/to/haiku/write.py```
+3. Terminal session 3: ```./ngrok http 5000```
+4. Terminal session 4: ```./ngrok http 5001```
+   
+   Gah! Ngrok won't allow us to do two simultaneous connections for free.
    
    Plug that URL into your browser and you should see an internet-accessible webpage!
