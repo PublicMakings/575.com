@@ -36,7 +36,7 @@ To be installed on the RPi. May require sudo.
 2. Terminal session 2: ```python3 /path/to/haiku/write.py```
 3. Terminal session 3: ```./ngrok http 5000```
 4. Terminal session 4: ```./ngrok http 5001```
-   
-   Gah! Ngrok won't allow us to do two simultaneous connections for free.
-   
-   Plug that URL into your browser and you should see an internet-accessible webpage!
+      
+   Plug that URL into your browser and you should see an
+   internet-accessible webpage! Note: Ngrok will not allow you to do two
+   simultaneous connections if you have a free account.
